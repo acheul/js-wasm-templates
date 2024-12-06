@@ -12,7 +12,7 @@ cd my-app
 ```
 
 
-***logs***
+*logs*
 ```yaml
 2024.12.06. consolidates js and cargo src roots;
 ```

@@ -10,3 +10,9 @@ cd my-app
 npx degit acheul/js-wasm-templates/vanilla my-app
 cd my-app
 ```
+
+
+***logs***
+```yaml
+2024.12.06. consolidates js and cargo src roots;
+```

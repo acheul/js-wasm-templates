@@ -50,7 +50,7 @@ const App: Component = () => {
               mock.push("100");
               return mock
             });
-          }}>error</button>
+          }}>panic</button>
         </div>
       </main>
     </div>

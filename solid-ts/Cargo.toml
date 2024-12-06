@@ -1,7 +1,8 @@
 [package]
-name = "wpkg"
+name = "solid-ts"
 version = "0.1.0"
 edition = "2021"
+exclude = ["readme.md"]
 
 [lib]
 crate-type = ["cdylib", "rlib"]

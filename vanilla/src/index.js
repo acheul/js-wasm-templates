@@ -1,4 +1,4 @@
-import init, * as wasm from "/wpkg/pkg/wpkg.js"
+import init, * as wasm from "/pkg/vanilla.js"
 await init();
 
 console.log("initiated;");

@@ -45,6 +45,12 @@ const App: Component = () => {
               return mock
             });
           }}>add str</button>
+          <button onClick={(e)=>{
+            setMock((mock)=>{
+              mock.push("100");
+              return mock
+            });
+          }}>error</button>
         </div>
       </main>
     </div>

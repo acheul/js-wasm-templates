@@ -12,6 +12,7 @@ export default defineConfig({
     pluginSass()
   ],
   html: {
-    template: "./index.html"
+    title: 'Solid App',
+    favicon: './src/assets/favicon.ico'
   }
 });

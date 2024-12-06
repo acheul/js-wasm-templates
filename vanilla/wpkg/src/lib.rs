@@ -1,5 +1,9 @@
 use wasm_bindgen::prelude::*;
 
+fn set_panic_hook() {
+  #[cfg(feature="debugging")]
+  console_error_panic_hook::set_once();
+}
 
 #[wasm_bindgen]
 pub fn add_number(x: i32, y: i32) -> i32 {
@@ -29,6 +33,10 @@ impl MockData {
   }
 
   pub fn push(&mut self, id: String) {
+    set_panic_hook();
+    if id=="100" {
+      panic!("panic with 100");
+    }
     self.list.push(id);
   }
 }

@@ -5,7 +5,7 @@ cd my-app
 
 # build wasm pack
 cd wpkg
-wasm-pack build --target=web
+wasm-pack build --target=web --features=debugging
 cd ..
 
 # run

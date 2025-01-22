@@ -1,8 +1,12 @@
 use wasm_bindgen::prelude::*;
 
+#[wasm_bindgen]
 pub fn set_panic_hook() {
   #[cfg(feature="debugging")]
-  console_error_panic_hook::set_once();
+  {
+    console_error_panic_hook::set_once();
+    gloo_console::log!("DEBUGGING MODE")
+  }
 }
 
 #[wasm_bindgen]
@@ -33,7 +37,6 @@ impl MockData {
   }
 
   pub fn push(&mut self, id: String) {
-    set_panic_hook();
     if id=="100" {
       panic!("panic with 100");
     }

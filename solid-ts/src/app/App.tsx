@@ -3,6 +3,11 @@ import { createSignal, type Component, type Signal } from 'solid-js';
 import init, * as w from 'wpkg';
 await init();
 
+// debugging
+if (import.meta.env.MODE=="development") {
+  w.set_panic_hook();
+}
+
 import logo from './logo.svg';
 import styles from './App.module.scss';
 

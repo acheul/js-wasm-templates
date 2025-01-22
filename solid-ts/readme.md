@@ -2,6 +2,7 @@
 # get started
 npx degit acheul/js-wasm-templates/solid-ts my-app
 cd my-app
+// change package name in `Cargo.toml`
 
 # build wasm pack
 wasm-pack build --target=web --features=debugging

@@ -1,6 +1,6 @@
 use wasm_bindgen::prelude::*;
 
-fn set_panic_hook() {
+pub fn set_panic_hook() {
   #[cfg(feature="debugging")]
   console_error_panic_hook::set_once();
 }
